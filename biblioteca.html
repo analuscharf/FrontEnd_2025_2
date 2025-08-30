@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title>Meus Livros</title>
+</head>
+<body>
+
+    <header>
+        <h1>Seja bem vindo</h1>
+        <p> Esse é um espaço para cadastras os <em>livro</em> que você leu!</p>        
+    </header>
+
+<body>
+    <h1>Formulário de Registro de Leituras</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label for="titulo">Título do livro:</label>
+            <input type="text" id="titulo" name="titulo" required>
+        </p>
+
+        <p>
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+        </p>
+
+        <p>
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">--Selecione--</option>
+                <option value="ficcao">Ficção</option>
+                <option value="romance">Romance</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="autoajuda">Suspense</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="data_termino">Data de término da leitura:</label>
+            <input type="date" id="data_termino" name="data_termino" required>
+        </p>
+
+        <p>
+            <label for="avaliacao">Avaliação pessoal (nota de 1 a 5):</label>
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required>
+        </p>
+
+        <p>
+            <label for="comentarios">Comentários sobre a obra:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </p>
+
+        <p>
+            <label for="paginas">Número de páginas:</label>
+            <input type="number" id="paginas" name="paginas" min="1">
+        </p>
+
+        <p>
+            <label for="recomendaria">Você recomendaria este livro?</label>
+            <select id="recomendaria" name="recomendaria">
+                <option value="">--Selecione--</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="formato">Formato de leitura:</label>
+            <select id="formato" name="formato">
+                <option value="">--Selecione--</option>
+                <option value="fisico">Físico</option>
+                <option value="ebook">E-book</option>
+                <option value="audiolivro">Audiolivro</option>
+            </select>
+        </p>
+
+        <p>
+            <button type="submit">Enviar Registro</button>
+        </p>
+    </form>
+</body>
+</html>
