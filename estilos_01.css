@@ -1,4 +1,19 @@
-/* Estilo global */
+ html {
+ box-sizing: border-box;
+ }
+ *, *:before, *:after {
+ box-sizing: inherit;
+ }
+
+ .caixa-estilo {
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ 
+ /* Estilo global */
 body {
   background-color: #A3A380;
   color: #000000; /* texto preto para contraste */
@@ -12,7 +27,11 @@ body {
 section, article {
   background-color: #efebce;
   padding: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  
 }
+
 
 /* Títulos */
 h1 {
@@ -57,6 +76,9 @@ p {
   font-size: 1.2rem;
   color: #000000;
   background-color: #efebce;
+   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* sombra suave */
+  border-radius: 10px; /* cantos arredondados */
+  transition: box-shadow 0.3s ease;
 }
 
 strong {
@@ -74,6 +96,8 @@ table {
   width: 100%;
   font-size: 0.95rem;
   background-color: #fff;
+  
+  
 }
 
 /* Cabeçalhos */
@@ -91,15 +115,7 @@ table th {
   text-align: center;
 }
 
-/* Células com conteúdo */
-table td:not(:empty) {
-  background-color: #f9f9f9;
-}
 
-/* Células vazias */
-table td:empty {
-  background-color: #f0f0f0;
-}
 
 /* Células especiais com rowspan */
 table td[rowspan] {
@@ -137,3 +153,71 @@ a.links {
   text-decoration: none;
 }
 
+hr {
+  color:red;
+
+}
+
+
+.secao-voo {
+  background-color: white;
+  padding: 20px;
+  margin: 30px;
+  border: 2px solid #333;
+}
+
+
+/* Células com conteúdo */
+.secao-voo td:not(:empty) {
+  background-color: #efebce;
+}
+
+/* Células especiais com rowspan */
+.secao-voo  td[rowspan] {
+  background-color: #efebce;
+  font-weight: bold;
+  color: #4B4B3A;
+}
+
+.secao-voo td:hover {
+  border: 2px groove #bb8588; /* Peach Blossom */
+  background-color:#A3A380; 
+  cursor: pointer;          
+}
+
+/* Células especiais com rowspan */
+.secao-voo td[rowspan] {
+  background-color:  #d8a48f;
+  font-weight: bold;
+  color: #4B4B3A;
+}
+header img {
+   width: 300px;      
+  height: auto;       
+    margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #bb8588;
+}
+
+
+#atividades  {
+    
+ 
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #bb8588;
+  background-color: #dbdbb7;
+}
+
+section {
+    
+ 
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #bb8588;
+  background-color: #dbdbb7;
+}
