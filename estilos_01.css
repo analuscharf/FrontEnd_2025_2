@@ -12,7 +12,36 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
- 
+
+.foto-central {
+  display: block;
+  margin: 2rem  auto 1rem auto; /* Centraliza e dá espaço abaixo */
+  width: 90px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #bb8588;
+}
+/* Títulos */
+#titulo {
+  font-size: 10.5vw;
+  color:#bb8588;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4B4B3A;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
  /* Estilo global */
 body {
   background-color: #A3A380;
@@ -33,14 +62,6 @@ section, article {
 }
 
 
-/* Títulos */
-h1 {
-  font-size: 10.5vw;
-  color: #efebce;
-  text-align: center;
-  text-transform: uppercase;
-
-}
 
 h2{
   font-size: 2rem;
@@ -220,4 +241,123 @@ section {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
   border: 2px solid #bb8588;
   background-color: #dbdbb7;
+}
+
+
+/* Container principal com 3 colunas */
+.meusfavoritos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #efebce; /* tom claro suave */
+}
+
+/* Cada coluna */
+.coluna {
+  flex: 1;
+  min-width: 250px;
+  background-color:  #d8a48f; 
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 2px solid #bb8588; /* borda rosada */
+}
+
+
+/* Título das colunas */
+.coluna h2 {
+  color: #a05c5f; /* tom escuro rosado para contraste */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+/* Lista de filmes e sites */
+.coluna ul li {
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+/* Pseudo-classes nos itens da lista */
+.coluna ul li:hover {
+  background-color: #d8a48f; /* tom blush suave */
+  color: #fff;
+}
+
+#top_filmes ul li::before {
+  content: "🎬 ";
+  color: #bb8588;
+}
+
+#atividades2 {
+  padding-top: 0; /* ou menos, se quiser mais justo */
+  margin-top: 0;       /* garante que não há margem externa */
+}
+
+
+
+
+/* Galeria de imagens */
+.meusfavoritos img {
+  width: 30%;
+  margin: 1%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #bb8588;
+  background-color: #f5f2d0;
+}
+
+/* Pseudo-classes nas imagens */
+#meusfavoritos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #bb8588;
+}
+
+#meusfavoritos img:active {
+  opacity: 0.8;
+  border-color: #a05c5f;
+}
+/* Estiliza a coluna de atividades */
+#atividades2 {
+  display: flex;
+   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #dbdbb7;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #bb8588;
+}
+
+/* Imagens da galeria */
+#atividades2 img {
+  width: 30%;
+  aspect-ratio: 1 / 1;         /* Mantém proporção quadrada */
+  object-fit: cover;           /* Preenche sem distorcer */
+  border-radius: 10px;
+  border: 2px solid #bb8588;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeitos de interação */
+#atividades2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #bb8588;
+}
+
+#atividades2 img:active {
+  opacity: 0.8;
+  border-color: #a05c5f;
+}
+
+#atividades2 h2 {
+  text-align: center;       /* Centraliza o título */
+  margin-top: 0;            /* Remove espaço acima */
+  margin-bottom: 1rem;      /* Espaço abaixo do título */
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <title>Pseudo-classes com Taylor Swift</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #C74E23;
+      margin-bottom: 1rem;
+    }
+
+    .musica {
+      display: block;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      padding: 0.3rem;
+      border-radius: 5px;
+      width: fit-content;
+    }
+
+    .musica:link {
+      color: blue;
+    }
+
+    .musica:visited {
+      color: purple;
+    }
+
+    .musica:hover {
+      background-color: #ccc;
+    }
+
+    .musica:active {
+      background-color: yellow;
+    }
+
+    input:focus {
+      border: 2px solid green;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2> Músicas da Taylor Swift</h2>
+
+  <!-- Links com explicações -->
+  <a class="musica" href="https://www.letras.mus.br/taylor-swift/love-story/" target="_blank">
+    Love Story — <small>:link → azul se não clicado</small>
+  </a>
+
+  <a class="musica" href="https://www.letras.mus.br/taylor-swift/blank-space/" target="_blank">
+    Blank Space — <small>:visited → roxo se já clicado</small>
+  </a>
+
+  <a class="musica" href="https://www.letras.mus.br/taylor-swift/cruel-summer/" target="_blank">
+    Cruel Summer — <small>:hover → fundo cinza ao passar o mouse</small>
+  </a>
+
+  <a class="musica" href="https://www.letras.mus.br/taylor-swift/all-too-well/" target="_blank">
+    All Too Well — <small>:active → fundo amarelo ao clicar</small>
+  </a>
+
+  <!-- Campo de entrada com explicação -->
+  <h2 style="margin-top: 2rem;">📝 Digite sua música favorita</h2>
+  <input type="text" placeholder="Ex: Enchanted">
+  <p><small>:focus → borda verde quando selecionado</small></p>
+
+</body>
+</html>
