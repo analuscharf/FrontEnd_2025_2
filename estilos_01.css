@@ -52,6 +52,16 @@ body {
   margin: 20px;
 }
 
+#anuniocios {
+  background-color:  #efebce; 
+  color: #000000;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
 /* Seções e artigos */
 section, article {
   background-color: #efebce;
@@ -71,7 +81,7 @@ h2{
 
 #linkforms{
   font-size: 2rem;
-  color:  #efebce; 
+  color:  #bb8588; 
   text-decoration: underline;
 }
 
