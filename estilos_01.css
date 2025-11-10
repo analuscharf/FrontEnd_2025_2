@@ -12,17 +12,25 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .foto-central {
   display: block;
-  margin: 2rem  auto 1rem auto; /* Centraliza e dá espaço abaixo */
+  margin: 2rem auto 1rem auto;
   width: 90px;
   height: 140px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
   border: 2px solid #bb8588;
+
+  /* Transição suave */
+  transition: transform 0.5s ease;
 }
+
+/* Transformação ao passar o mouse */
+.foto-central:hover {
+  transform: rotate(10deg) scale(1.2) translateX(20px);
+}
+
 /* Títulos */
 #titulo {
   font-size: 10.5vw;
@@ -61,7 +69,18 @@ body {
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.00000000000004 s;
 }
+
+#anuniocios:hover {
+  background-color: #d8a48f;
+   transition-delay: 1s;
+   transition-timing-function: ease-in-out;
+
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 /* Seções e artigos */
 section, article {
   background-color: #efebce;
